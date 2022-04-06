@@ -32,7 +32,7 @@ async function run() {
 
 		let uaVars = [];
 		const payload = github.context.payload;
-		const packageType = payload.registry_package.package_type;
+		const packageType = payload.package.package_type;
 		core.info('Package type: ' + packageType);
 
 		// If the package type is docker - pull it
