@@ -32,7 +32,7 @@ async function run() {
 
 		let uaVars = [];
 		const payload = github.context.payload;
-		core.info(payload);
+		core.info(JSON.stringify(payload));
 		const packageType = payload.package.package_type;
 		core.info('Package type: ' + packageType);
 
